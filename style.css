@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+#navbar {
+  width: 100%;
+  height: 75px;
+  background: #7161ff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: auto 25px auto 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: #000428;
+  background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+  background: linear-gradient(to bottom, #004e92, #020b57);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+#projects {
+  background-image: linear-gradient(0.6deg, rgba(83, 5, 5, 1) 11.2%, rgba(0, 0, 0, 0.8) 91.1%);
+  width: 100%;
+  /* height: 490px; */
+}
+
+.project-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.project-tile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
+span {
+  background-color: red;
+}
+
+#profil {
+  background-color: cadetblue;
+  width: 100%;
+  height: 200px;
+}
+
+#link {
+  text-align: center;
+  padding-top: 100px;
+}
+
+@media (max-width: 576px) {
+  #navbar {
+    justify-content: center;
+  }
+}
